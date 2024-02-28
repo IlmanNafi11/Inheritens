@@ -4,7 +4,6 @@ public class Product {
     private int hargaProduct;
     private int jumlahStock;
     private String kategori;
-    private int jumlahPembelian;
     public Product(String idProduct, String namaProduct, int hargaProduct, int jumlahStock, String kategori) {
         this.idProduct = idProduct;
         this.namaProduct = namaProduct;
