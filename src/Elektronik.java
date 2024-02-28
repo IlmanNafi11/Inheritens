@@ -12,7 +12,7 @@ public class Elektronik extends Product{
     public void displayDetail(){
         super.displayDetail();
         System.out.println("Kategori : " + kategori);
-        System.out.println("Tipe : ");
+        System.out.println("Tipe : " + type);
     }
     
 }
