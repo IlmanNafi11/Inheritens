@@ -15,7 +15,7 @@ public class Product {
         System.out.println("Produk ID : " + idProduct);
         System.out.println("Kategori : " + kategori);
         System.out.println("Nama Produk : " + namaProduct);
-        System.out.println("Harga : " + hargaProduct);
+        System.out.println("Harga : Rp. " + hargaProduct);
         System.out.println("Stok : " + jumlahStock);
     }
     public String getIdProduct(){
