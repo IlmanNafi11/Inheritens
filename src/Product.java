@@ -18,5 +18,14 @@ public class Product {
         System.out.println("Harga : " + hargaProduct);
         System.out.println("Stok : " + jumlahStock);
     }
+    public String getKategori(){
+        return kategori;
+    }
+    public String getNamaBarang(){
+        return namaProduct;
+    }
+    public int getHargaProduct(){
+        return hargaProduct;
+    }
     
 }
