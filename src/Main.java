@@ -9,7 +9,10 @@ public class Main {
         // Pulsa pulsa = new Pulsa("PLS-001", "Paket Data 4GB", 35000, 5, "Paket Data", "Telkomsel");
         // pulsa.displayDetail();
         Product product = new Product("PROD-1", "Casing", 50000, 2, "Suku cadang");
-        Transaksi transaksi = new Transaksi("Tran-01", product);
-        transaksi.displayDetail();
+        // Transaksi transaksi = new Transaksi("Tran-01", product);
+        // transaksi.displayDetail();
+        Transaksi tr = new Transaksi("001", product, 4);
+        tr.hitungTotal();
+        tr.displayDetail();
     }
 }
