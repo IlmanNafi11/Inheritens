@@ -1,18 +1,11 @@
+## Encapsulation
+
+Konsep yang digunakan untuk mengatur akses dan kontrol atas properti dan method dalam suatu kelas. Tujuan utama dari encapsulation adalah untuk menyembunyikan rincian implementasi internal suatu object dan memberikan akses terkontrol melalui hak akses public.
+
+## Polymorphism
+
+Polymorphism mengacu pada kemampuan suatu object untuk mengambil bentuk atau perilaku dari beberapa bentuk yang berbeda.
+
 ## Inheritens
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Konsep dimana sebuah kelas dapat mewarisi sifat dan perilaku dari kelas lain. Dengan menggunakan pewarisan, kelas baru dapat memanfaatkan fitur/method yang sudah ada di kelas parent.
