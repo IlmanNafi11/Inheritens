@@ -13,6 +13,25 @@ public class Service extends Transaksi {
         this.keterangan = keterangan;
     }
 
-    
+    @Override
+    public void displayDetail() {
+        super.displayDetail();
+        System.out.println("Keterangan : " + keterangan);
+        System.out.println("Biaya Jasa : " + jasa);
+        System.out.println("Nama Customer : " + namaCustomer);
+        System.out.println("No Hp Customer : "+ noHp);
+        System.out.println("Alamat : Customer : " + alamat);
+    }
+
+    @Override
+    public int hitungTotal() {
+        jasa = 15000;
+        return super.hitungTotal() + jasa;
+    }
+
+    @Override
+    public int hitungRefund() {
+        return super.hitungRefund();
+    }
     
 }

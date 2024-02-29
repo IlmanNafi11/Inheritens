@@ -13,8 +13,9 @@ public class Main {
         // transaksi.displayDetail();
         Transaksi tr = new Transaksi("TR-001", product, 4, 230000);
         TransaksiPenjualan transaksiPenjualan = new TransaksiPenjualan("TP-001", product, 2, 120000, "08539326885");
-        transaksiPenjualan.hitungTotal();
-        transaksiPenjualan.hitungRefund();
-        transaksiPenjualan.displayDetail();
+        Service service = new Service("SER-001", product, 1, 40000, "Ilman", "0852986", "Sragen", "Ganti Casing");
+        service.hitungTotal();
+        service.hitungRefund();
+        service.displayDetail();
     }
 }
