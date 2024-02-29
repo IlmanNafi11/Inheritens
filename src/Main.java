@@ -11,8 +11,10 @@ public class Main {
         Product product = new Product("PROD-1", "Casing", 50000, 2, "Suku cadang");
         // Transaksi transaksi = new Transaksi("Tran-01", product);
         // transaksi.displayDetail();
-        Transaksi tr = new Transaksi("001", product, 4);
-        tr.hitungTotal();
-        tr.displayDetail();
+        Transaksi tr = new Transaksi("TR-001", product, 4, 230000);
+        TransaksiPenjualan transaksiPenjualan = new TransaksiPenjualan("TP-001", product, 2, 120000, "08539326885");
+        transaksiPenjualan.hitungTotal();
+        transaksiPenjualan.hitungRefund();
+        transaksiPenjualan.displayDetail();
     }
 }

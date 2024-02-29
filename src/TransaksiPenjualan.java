@@ -1,21 +1,27 @@
 public class TransaksiPenjualan extends Transaksi{
-    private int jumlahDiskon = 10000;
+    private int jumlahDiskon;
     private String noHpMember;
-    private int jumlahBayar;
-    private int totalBayar;
-    private int refund;
 
-    public TransaksiPenjualan(String idTransaksi, Product product, int jumlah, String noHpMember, int jumlahBayar) {
-        super(idTransaksi, product, jumlah);
+    public TransaksiPenjualan(String idTransaksi, Product product, int jumlahDiBeli, int jumlahBayar, String noHpMember) {
+        super(idTransaksi, product, jumlahDiBeli, jumlahBayar);
         this.noHpMember = noHpMember;
-        this.jumlahBayar = jumlahBayar;
     }
+
     @Override
     public void displayDetail() {
         super.displayDetail();
+        System.out.println("Diskon : Rp. " + jumlahDiskon);
+        System.out.println("No Hp Member : " + noHpMember);
     }
+
     @Override
     public int hitungTotal() {
+        jumlahDiskon = 10000;
         return super.hitungTotal() - jumlahDiskon;
+    }
+
+    @Override
+    public int hitungRefund() {
+        return super.hitungRefund();
     }
 }
