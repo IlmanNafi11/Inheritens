@@ -38,6 +38,6 @@ public class Transaksi {
     }
 
     public int hitungRefund(){
-        return refund = jumlahBayar - total;
+        return refund = jumlahBayar - hitungTotal();
     }
 }
